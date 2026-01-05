@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+body,html{
+    height: 100%;
+    color:white;
+    background:linear-gradient(to top,rgb(159, 122, 99),rgb(160, 160, 239),rgb(92, 53, 88));
+    
+}
+nav{
+    max-width: 100%;
+    background: linear-gradient(to right,rgb(133, 133, 239),rgb(238, 139, 156) , rgb(224, 99, 77));
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+nav ul li{
+    margin: 15px;
+    padding: 17px 12px;
+    list-style: none;
+}
+nav ul li a{
+    position: relative;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:red;
+    cursor: pointer;
+}
+
+nav ul li a .underline{
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background-color:darkred;
+    transition:width 0.5s ease;
+}
+nav ul li a:hover .underline{
+    width: 100%;
+}
+
+
+
+/* heroSection */
+.Info-containter{
+    border-radius: 15px;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    
+}
+.Info-containter:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.55);
+}
+.Info-containter .Information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    width: 50%;
+    
+}
+.Info-containter .Information h2{
+    font-size: 40px;
+    color:blueviolet
+}
+.Info-containter .Information h3{
+    font-weight: 300;
+    font-size: 30px;
+}
+.Info-containter .Information p{
+    font-size: 14px;
+    color:gainsboro;
+}
+
+.btn button{
+    padding: 12px 15px;
+    margin: 55px 0;
+    font-size:17px;
+    border-radius: 12px;
+    background-color:black;
+    color: white;
+    transition:transform 0.5 ease;
+}
+.btn button:hover{
+    cursor: pointer;
+    transform:scaleX(.9);
+}
+
+.Info-containter .img img{
+    padding: 15px;
+    border-radius: 50%;
+    width: 400px;
+    height: 500px;
+}
